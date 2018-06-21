@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=VT323");
+$primary-font: "VT323";
+body {
+    background-image: url("images/pokeball.jpg");
+    background-size: cover;
+}
+
+#welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-image: url("images/pokeball.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: opacity 1s;
+}
+
+.fadeout {
+    opacity: 0;
+}
+
+.width-change {
+    animation-name: width-div;
+    animation-duration: 2s;
+}
+
+@keyframes width-div {
+    0% {
+        width: 33%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+p {
+    font-family: $primary-font;
+    margin: 25px;
+    font-size: 50px;
+}
+
+h1 {
+    font-family: $primary-font;
+    margin: 25px;
+    font-size: 70px;
+}
+
+#btn-open-pokedex {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2em;
+    font-family: $primary-font;
+    font-size: 35px;
+    margin: 30px;
+    cursor: pointer;
+    &:hover {
+        color: #d2c5c5;
+    }
+}
+
+.box {
+    height: 100vh;
+    transform: skew(14deg, 0deg);
+    border-radius: 2em;
+}
+
+.img-wrapper {
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 300px;
+    filter: grayscale(1);
+    transform: skew(-14deg, 0deg);
+    margin: 0 100px;
+    &:hover {
+        filter: none !important;
+    }
+}
+
+.info {
+    display: none;
+    align-items: center;
+    transform: skew(-14deg, 0deg);
+}
+
+h2 {
+    font-size: 55px;
+    font-family: $primary-font;
+}
+
+ul.description {
+    text-align: left;
+    font-size: 35px;
+    font-family: $primary-font;
+    list-style-type: none;
+    background-color: #ffffffa6;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 10px -3px #000;
+}
+
+.btn {
+    background-color: black;
+    border-radius: 2em;
+    font-family: $primary-font;
+    font-size: 35px;
+    margin: 30px;
+    &:hover {
+        background-color: rgb(206, 25, 25);
+    }
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+}
