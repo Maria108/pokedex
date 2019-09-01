@@ -50,7 +50,7 @@ function getAxios(callback) {
                 let defense = getStat(stats, "special-defense")
 
                 // Get picture
-                let pic = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${id}.png`;
+                let pic = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/0${id}.png`;
 
                 // Create pokemon
                 let pokemon = new Pokemon(name, hp, attack, defense, abilities, moves, pic)
