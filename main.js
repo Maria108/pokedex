@@ -32,7 +32,7 @@ let masterMasha = new MasterMasha()
 
 let mainDiv = document.querySelector("#pokemon-row")
 
-const pokemonIds = ["018", "026", "037"];
+const pokemonIds = ["18", "26", "37"];
 
 function getAxios(callback) {
     pokemonIds.forEach((id, idx) => {
